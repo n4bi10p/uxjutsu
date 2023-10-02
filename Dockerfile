@@ -54,5 +54,7 @@ COPY . .
 # install dependencies
 RUN pip install -r requirements.txt
 
+EXPOSE 8080
+
 # command to run on container start
 CMD [ "bash", "./run" ]
